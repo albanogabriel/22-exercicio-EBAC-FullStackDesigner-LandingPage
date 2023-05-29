@@ -1,0 +1,65 @@
+.tendences {
+    display: flex;
+    background-color: rgb(36, 14, 36);
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .container {
+        display: flex;
+        
+        
+
+        @media (max-width: 640px) {
+            display: block;
+        }
+    }
+
+    &__description {
+        margin-right: 100px;
+
+        .title {
+            padding-bottom: 20px;
+        }
+            
+            &__list {
+
+                &__items {
+                    display: flex;
+                    align-items: baseline;
+                    margin: 25px;
+
+                    img {
+                        padding-right: 30px;
+                    }
+
+                    .description {
+                        display: block;
+                        align-items: baseline;
+
+                        &__bullet {
+                            display: flex;
+                        }
+
+                        .title--verysmall {
+                            text-align:initial;
+                        }
+
+                        p.text {
+                            margin: 10px 0px 0px 50px;
+
+                        }
+                    }
+
+                }
+            }
+        
+    } 
+
+    &__image {
+        
+        &__img {
+            height: 600px;
+            border-radius: 20px;
+        }
+    }
+}

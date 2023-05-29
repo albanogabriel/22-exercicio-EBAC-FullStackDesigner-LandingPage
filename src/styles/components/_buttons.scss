@@ -1,0 +1,38 @@
+@use '../variables';
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &--pink {
+        color: white;
+        background-color: variables.$colorPink;
+        font-family: roboto, sans-serif;
+
+        &:hover {
+            background-color: lighten(variables.$colorPink, 5%);
+        }
+    }
+
+    &--orange-ghost {
+        color: variables.$colorOrange;
+        background-color: transparent;
+        border: 1px solid variables.$colorOrange;
+        border-radius: 12px;
+        font-family: roboto, sans-serif;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+            background-color: variables.$colorOrange;
+        }
+
+        
+    }
+}

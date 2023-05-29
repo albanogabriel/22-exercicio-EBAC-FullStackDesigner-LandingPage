@@ -1,0 +1,126 @@
+@use 'variables';
+
+.hero {
+    background-image: linear-gradient(202deg, #7c078e, #37104b);
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: block;
+
+    .container {
+        display: flex;
+        padding-bottom: 60px;
+
+        @media (max-width: 640px) {
+            display: block;
+            max-width: 80%;
+        }
+        
+    }
+
+    &__title {
+        padding-right: 40px;
+        color: variables.$colorPink;
+        
+        .title--small {
+            width: 200px;
+            font-size: 18px;
+            font-weight: 400;
+            color: variables.$colorPink;
+            border: 1px solid variables.$colorPink;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .title--big {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .text {
+            width: 500px;
+
+            @media (max-width: 640px) {
+                display: block;
+                max-width: 80%;
+            }
+        }
+
+        &__contador {
+            position: relative;
+
+            @media (max-width: 640px) {
+                display: block;
+                transform: scale(0.6);
+                margin-right: 300px;    
+            }
+
+            &__orangeball {
+                background-color: orange;
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                top: 29px;
+                left: 83px;
+                border-radius: 100%;
+            }
+
+            #contador {
+                font-family: 'rubik', sans-serif;
+                font-weight: 900;
+                position: absolute;
+                top: 61px;
+                left: 29px;
+                font-size: 45px;
+                color: white;
+                font-weight: 400;
+                // text-decoration: underline;
+            }
+        }
+    }
+
+    &__infos-bar {
+        // background-color: white;
+        margin-top: 20px;
+        width: 324px;
+
+        .button--pink {
+            width: 300px;
+        }
+
+        #contador2 {
+            display: block;
+            text-align: center;
+            // background-color: rgb(51, 28, 45);
+            padding: 8px;
+
+        }
+
+
+
+        &__infos {
+            margin-bottom: 10px;
+
+
+            &__item {
+                li {
+                    color: black;
+                }
+
+                
+            }
+
+
+        }
+    }
+
+    
+
+    img {
+        padding-top: 90px;
+        height: 400px;
+
+        
+    }
+
+    
+}

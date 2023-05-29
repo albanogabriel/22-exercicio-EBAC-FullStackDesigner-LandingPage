@@ -1,0 +1,106 @@
+@use 'variables';
+
+
+
+.learn {
+    background-color: variables.$colorPurple;  
+    padding-top: 80px; 
+
+    .container {
+        display: flex;
+    }
+
+    &__description {
+        margin-right: 50px;
+
+        h2 {
+            padding-bottom: 20px;
+        }
+
+        p {
+            padding-bottom: 30px;
+        }
+
+        .button.button--pink{
+            border-radius: 4px;
+        }
+        
+    }
+
+    
+
+    h3 {
+        font-family: rubik, sans-serif;
+        font-weight: 500;
+        padding-bottom: 50px;
+    }
+
+    &__accordions { //ul - accordions
+
+        
+
+        &__item { //li - accordions
+            background-color: rgb(85, 32, 85);
+            border-radius: 10px;
+            width: 650px;
+            max-width: 100%;
+            
+            &__question { 
+                color: white;
+                font-size: 14px;
+                padding: 16px;
+                display: block;
+                cursor: pointer;
+                position: relative;
+                margin-top: 12px;
+
+                &::after {
+                    content: '+';
+                    color: variables.$colorOrange;
+                    position: absolute;
+                    top: 0;
+                    right: 12px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 23px;
+                }
+                
+            }
+
+            &__answer {
+                height: 0;
+                overflow: hidden;
+                transition: height, .5s ease;
+                padding: 0 16px;
+
+                ul {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    // background-color: red;
+                    padding-left: 30px;
+                    
+                    li {
+                        color: variables.$colorOrange;
+                        padding-bottom: 12px;
+                    }
+                }
+            }
+
+            &--is-open {
+                .learn__accordions__item__question::after {
+                    content: '-';
+                }
+
+                .learn__accordions__item__answer {
+                    height: auto;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+            }
+
+        }
+    }
+
+
+}

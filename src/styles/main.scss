@@ -1,3 +1,35 @@
-body {
-    background-color: red;
+@use 'hero';
+@use 'variables';
+@use './components/fonts';
+@use './components/infos-bar';
+@use './components/buttons';
+@use 'header';
+@use 'hero_details';
+@use 'tendences';
+@use 'uxuifront';
+@use 'salary';
+@use 'indicado';
+@use 'learn';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    color: #fff;
 }
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 80%;
+    }
+}
+

@@ -1,0 +1,14 @@
+.hero__details {
+    display: flex;
+    padding-top: 60px;
+    border-top: 1px solid grey;
+
+    &__item {
+        margin: 0 30px;
+        width: 100%;
+
+        &__title {
+            padding-bottom: 10px;
+        }
+    }
+}

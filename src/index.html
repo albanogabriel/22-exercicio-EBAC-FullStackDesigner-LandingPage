@@ -7,10 +7,650 @@
     <title>EBAC - Full Stack Designer</title>
     <!-- main.scss -->
     <link rel="stylesheet" href="./styles/main.scss">
+    <!-- fonts.google - Rubik and Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- AOS animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 
 </head>
 <body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <img class="header__logo" src="./images/ebac-logo-preto.svg" alt="logo ebac">
+            <ul class="header__nav">
+                <li >
+                    <a class="header__nav__item text text--orange" href="#">Cursos</a>
+                </li>
+                <li >
+                    <a class="header__nav__item text" href="#">Educação Corporativa</a>
+                </li>
+                <li >
+                    <a class="header__nav__item text" href="#">Eventos</a>
+                </li>
+                <li >
+                    <a class="header__nav__item text" href="#">Blog</a>
+                </li>
+                <li >
+                    <a class="header__nav__item text" href="#">Sobre</a>
+                </li>
+            </ul>
+            <ul class="header__enter">
+                <li id="header-tel" class="header__enter__item text">
+                    	+55 (11) 3030-3200                 
+                </li>
+                <li class="header__enter__button button button--orange-ghost">
+                    Sou aluno
+                </li>
+            </ul>
+        </div>
+    </header>
     
+    <!-- section hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__title">
+                <div data-aos="fade-right" data-aos-easing="linear" >
+                    <p class="title--small">Evento online</h1>
+                    <h1 class="title--big">
+                        Profissão: Full- <br>
+                        Stack Designer
+                    </h1>        
+                    <p class="text" data-aos="fade-right">
+                        Torne-se um profissional completo capaz de trabalhar com habilidades de <b class="text--big">UX/UI</b> e <b class="text--big">Front-end</b>. Você vai aprender desde a criação da interface até a programação de produtos digitais. Aumente as suas chances de empregabilidade numa das áreas mais promissoras do mercado e se destaque como um <br> Full-Stack Designer.
+                    </p>
+                </div>
+                <div class="hero__infos-bar" data-aos="zoom-in">
+                    <ul class="hero__infos-bar__infos">
+                        <li class="hero__infos-bar__infos__item text">
+                                <b>Quando</b>
+                                12/12/2023 
+                        </li>
+                    </ul>
+                    <a href="#" class="button button--pink">
+                        Garanta sua vaga
+                    </a>
+                    <span class="text--small" id="contador2"></span>
+                </div>
+            </div>
+
+            <div class="hero__title__contador">
+                <div class="hero__title__contador__orangeball" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <div data-aos="zoom-in">
+                        <!-- <span class="text--big" id="contador"></span> -->
+                        <span class="text--big" id="contador" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"> 60%</span>
+                    </div>
+                </div>
+                <img src="./images/ui-ux.png" alt="" class="hero__logo">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero__details">
+                <ul class="hero__details__item" data-aos="fade-up" data-aos-duration="500">
+                    <li class="hero__details__item__title title--verysmall">Formação completa</li>
+                    <li class="hero__details__item__description text--small">3 cursos em 15 meses com mais de 89 horas de aulas online</li>
+                </ul>
+                <ul class="hero__details__item" data-aos="fade-up" data-aos-duration="1000">
+                    <li class="hero__details__item__title title--verysmall" >Prática e mentoria</li>
+                    <li class="hero__details__item__description text--small">Atividades ao longo do curso e feedback individualizado do tutor</li>
+                </ul>
+                <ul class="hero__details__item" data-aos="fade-up" data-aos-duration="1500">
+                    <li class="hero__details__item__title title--verysmall" >mentoria especializada</li>
+                    <li class="hero__details__item__description text--small">Atividades ao longo do curso e feedback individualizado do tutor</li>
+                </ul>
+                <ul class="hero__details__item" data-aos="fade-up" data-aos-duration="2000">
+                    <li class="hero__details__item__title title--verysmall" >Garantimos emprego</li>
+                    <li class="hero__details__item__description text--small">Ou devolvemos o dinheiro</li>
+                </ul>
+                <ul class="hero__details__item" data-aos="fade-up" data-aos-duration="2500">
+                    <li class="hero__details__item__title title--verysmall" >10 projetos</li>
+                    <li class="hero__details__item__description text--small">Para enriquecer seu portfólio profissional</li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- section uxuifrontend -->
+    <section class="uxuifront">
+        <div class="container">
+            <div class="uxuifront__image">
+                <img src="./images/ux.svg" alt="">
+                <p class="text--big">UX</p>
+            </div>
+            <div class="uxuifront__image">
+                <img src="./images/ui.svg" alt="">
+                <p class="text--big">UI</p>
+            </div>
+            <div class="uxuifront__image">
+                <img src="./images/front-end.svg" alt="">
+                <p class="text--big">Front-End</p>
+            </div>
+            <h2 class="title">Full Stack Designer:
+                o profissional mais completo do web design
+            </h2>
+        </div>
+    </section>
+    
+
+    <!-- section tendences -->
+    <section class="tendences">
+        <div class="container">
+             <!-- section tendences -->
+            <div class="tendences__description">
+                <h2 class="title">
+                    Full Stack Design: uma tendência em TI
+                </h2>
+                <p class="text">
+                    Full Stack é o profissional capaz de operar em todas as etapas de desenvolvimento de um projeto. Sua capacidade de enxergar o projeto como um todo, do Front ao Back-end, é um diferencial estratégico para as empresas, especialmente quando se trata de Java.
+                </p>
+                <ul class="tendences__description__list">
+                    <li class="tendences__description__list__items" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="description">
+                            <div class="description__bullet">
+                                <img src="./images/bullet-green-point.svg" alt="bulletpoints">
+                                <h3 class="title--verysmall">Alta demanda</h3>
+                            </div>
+                            <p class="text">UX/UI Designers e desenvolvedores Front-end estão entre as 10 principais e mais demandadas profissões digitais da atualidade</p>
+                        </div>
+                    </li>
+                    <li class="tendences__description__list__items" data-aos="fade-right" data-aos-duration="1500">
+                        <div class="description">
+                            <div class="description__bullet">
+                                <img src="./images/bullet-green-point.svg" alt="bulletpoints">
+                                <h3 class="title--verysmall">Versatilidade</h3>
+                            </div>
+                            <p class="text">É uma profissão completa: contempla desde a concepção, pesquisa, wireframes até a interface com o usuário e layouts.</p>
+                        </div>
+                    </li>
+                    <li class="tendences__description__list__items" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="description">
+                            <div class="description__bullet">
+                                <img src="./images/bullet-green-point.svg" alt="bulletpoints">
+                                <h3 class="title--verysmall">Mercado aquecido</h3>
+                            </div>
+                            <p class="text">São mais de 3.000 vagas/mês no LinkedIn Brasil somando as áreas de Front-end, UX e UI Design.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tendences__image">
+                <img class="tendences__image__img" src="./images/tendences-images.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+     <!-- section salary -->
+    <section class="salary">
+        <div class="container">
+            <h2 class="salary__title title">
+                Quanto ganha um <br> Full Stack Designer
+            </h2>
+
+            <div class="salary__salarios" data-aos="fade-right" data-aos-duration="2000">
+                <div id="junior" class="salary__salarios__item">
+                    <h3 class="title--verysmall" >R$ 4.394/mês</h3>
+                    <p class="text">Júnior</p>
+                    <div class="skills__bar" >
+                        <span class="skills__bar__percentage1" ></span>
+                    </div>
+                </div>
+                <div id="pleno" class="salary__salarios__item">
+                    <h3 class="title--verysmall" >R$ 7.065/mês</h3>
+                    <p class="text">Pleno</p>
+                    <div class="skills__bar">
+                        <span class="skills__bar__percentage2" ></span>
+                    </div>
+                </div>
+                <div id="senior" class="salary__salarios__item">
+                    <h3 class="title--verysmall">Até R$ 12.000/mês</h3>
+                    <p class="text">Senior</p>
+                    <div class="skills__bar">
+                        <span class="skills__bar__percentage3" ></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="salary__glassdoor">
+                <p class="text">*Ref. Glassdoor.com.br para a região de São Paulo</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- section indicado -->
+    <section class="indicado">
+        <div class="container">
+            <h2 class="indicado__title title">
+                Para quem este <br> curso é indicado
+            </h2>
+            <ul class="indicado__items" data-aos="fade-up" data-aos-duration="2000">
+                <li class="indicado__items__item">
+                    <img class="indicado__items__item__image" src="./images/iniciante-design.svg" alt="">
+                    <h3 class="indicado__items__item__title title--small">Iniciante em design</h3>
+                    <p class="indicado__items__item__p text">Se você quer se aprofundar nos conceitos de interface e experiência do usuário para criar layouts atraentes e funcionais, este curso é pra você. Aprenda técnicas de design gráfico que lhe permitirão criar protótipos e montar uma bela aplicação do zero para ingressar na área.</p>
+                </li>
+                <li class="indicado__items__item">
+                    <img class="indicado__items__item__image" src="./images/dev-webs.svg" alt="">
+                    <h3 class="indicado__items__item__title title--small">Iniciante em design</h3>
+                    <p class="indicado__items__item__p text">Se você quer se aprofundar nos conceitos de interface e experiência do usuário para criar layouts atraentes e funcionais, este curso é pra você. Aprenda técnicas de design gráfico que lhe permitirão criar protótipos e montar uma bela aplicação do zero para ingressar na área.</p>
+                </li>
+                <li class="indicado__items__item">
+                    <img class="indicado__items__item__image" src="./images/designers.svg" alt="">
+                    <h3 class="indicado__items__item__title title--small">Iniciante em design</h3>
+                    <p class="indicado__items__item__p text">Se você quer se aprofundar nos conceitos de interface e experiência do usuário para criar layouts atraentes e funcionais, este curso é pra você. Aprenda técnicas de design gráfico que lhe permitirão criar protótipos e montar uma bela aplicação do zero para ingressar na área.</p>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <!-- section learn -->
+    <section class="learn">
+        <div class="container">
+            <div class="learn__description">
+                <h2 class="title--small">
+                    O que você aprenderá
+                </h2>
+                <p class="text">
+                    Você terá acesso a mais de 360 horas de material, gravado e ao vivo. Planeje sua própria rotina de estudos e conclua sua pós-graduação a partir de 8 meses . Conclua o curso com um case do mercado como trabalho final, avaliado por profissionais da área.
+                </p>
+                <a class="button button--pink" href="#">Tire suas dúvidas</a>
+            </div>
+            <!-- cursos 1,2,3 ux, ui , front-end -->
+            <div class="cursos-ux-ui-frontend">
+                <div>
+                    <h3>CURSO 1 - UX Desgin</h1>
+                        <ul class="learn__accordions">
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    1. Design para pessoas: definição e cenário atual no Brasil
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    2. Design Thinking
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    3. Definição de problema e ideação
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    4. Planejamento de pesquisa de usuário
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    5. Execução e análise de pesquisa de usuário
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    6. Os usuários
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    7. Usabilidade e prototipação
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    8. Design Interativo e UX Writing
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                </div>
+                <div>
+                    <h3>CURSO 2 - UI Desgin</h1>
+                        <ul class="learn__accordions">
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    1. Design para pessoas: definição e cenário atual no Brasil
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    2. Design Thinking
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    3. Definição de problema e ideação
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    4. Planejamento de pesquisa de usuário
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    5. Execução e análise de pesquisa de usuário
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    6. Os usuários
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    7. Usabilidade e prototipação
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    8. Design Interativo e UX Writing
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                </div>
+                <div>
+                    <h3>CURSO 3 - Engenheiro Front-end</h1>
+                        <ul class="learn__accordions">
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    1. Design para pessoas: definição e cenário atual no Brasil
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    2. Design Thinking
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    3. Definição de problema e ideação
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    4. Planejamento de pesquisa de usuário
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    5. Execução e análise de pesquisa de usuário
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    6. Os usuários
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    7. Usabilidade e prototipação
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="learn__accordions__item">
+                                <div class="learn__accordions__item__question title--verysmall" data-faq-question>
+                                    8. Design Interativo e UX Writing
+                                </div>
+                                <div class="learn__accordions__item__answer text ">
+                                    Você começará com uma introdução sobre o valor do design na era do cliente. Você vai ver o que é UX e UI, os benefícios da aplicação do design em produtos ou serviços, a evolução, os ROIs do design e cases que mudaram indústrias e mercados inteiros.
+                                    <ul>
+                                        <li>Designing for people: Empatia</li>
+                                        <li>Designing for people: Introdução ao UX</li>
+                                        <li>A importância de UX Design para as empresas</li>
+                                        <li>O mercado de UX no Brasil</li>
+                                        <li>A carreira de UX</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/src/scripts/main.js"></script>
 </body>
 </html>

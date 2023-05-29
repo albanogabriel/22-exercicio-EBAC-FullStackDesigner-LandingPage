@@ -1,0 +1,76 @@
+@use 'variables';
+
+.salary {
+    background-color: variables.$colorPurple;
+    padding-bottom: 100px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__salarios {
+        display: flex;
+        margin: 0 auto;
+        
+
+        &__item {
+            padding: 30px;
+            height: 100px;
+
+        }    
+
+        .skills__bar {
+            margin-top: 10px;
+            display: block;
+            width: 300px;
+            background-color: variables.$colorPink;
+
+            &__percentage1 {
+                display: block;
+                width: 20%;
+                height: 6px;
+                background-color: rgb(172, 231, 84);
+            }
+            
+            &__percentage2 {
+                display: block;
+                width: 60%;
+                height: 6px;
+                background-color: rgb(172, 231, 84);
+            }
+
+            &__percentage3 {
+                display: block;
+                width: 85%;
+                height: 6px;
+                background-color: rgb(172, 231, 84);
+            }
+        }
+        
+        #junior {
+            // background-color: red;
+            margin-top: 100px;
+            font-size: 20px;
+            
+        }
+
+        #pleno {
+            // background-color: rgb(67, 190, 40);
+            margin-top: 50px;
+            font-size: 25px;
+        }
+
+        #senior {
+            // background-color: rgb(65, 73, 185);
+            font-size: 30px;
+        }
+        
+    }
+
+
+    .salary__glassdoor {
+        text-align: center;
+        opacity: 30%;
+    }
+
+}
