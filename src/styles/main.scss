@@ -10,6 +10,7 @@
 @use 'salary';
 @use 'indicado';
 @use 'learn';
+@use 'footer';
 
 * {
     margin: 0;
@@ -17,6 +18,10 @@
     box-sizing: 0;
     list-style: none;
     color: #fff;
+    font-family: 'Rubik', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+    // font-size: 50%;
 }
 
 .container {

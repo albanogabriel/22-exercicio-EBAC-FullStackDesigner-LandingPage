@@ -1,0 +1,112 @@
+@use 'variables';
+
+.footer {
+    background-color: rgb(44, 44, 73);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid grey;
+    
+
+    .container {
+        
+    }
+
+    .footer-div {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+
+        .footer1 {
+            width: 300px;
+            
+    
+            &__logo {
+                height: 80px;
+                padding-bottom: 30px;
+            }
+    
+            &__certificados {
+                &__image {
+                    height: 60px;
+                    padding-bottom: 30px;
+                }
+            }
+    
+            p {
+                font-size: 12px;
+                margin-bottom: 6px;
+            }
+        }
+    
+        .footer2 {
+            margin-right: 60px;
+    
+            &__ul {
+                padding-bottom: 30px;
+                
+    
+                &__title {
+                    font-weight: 700;
+                    padding-bottom: 12px;
+                }
+    
+                li { 
+                    margin-bottom: 6px;
+
+                    // &:hover {
+                    //     color: darken(rgb(246, 246, 246), 10%);
+                    // }
+                }
+                
+            }
+    
+            
+        }
+    
+        a {
+            text-decoration: none;
+        }
+
+
+    }
+
+    .footer-div2 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+        border-top: 1px solid grey;
+        
+
+        &__ul {
+            &__title {
+                padding-bottom: 2px;
+
+                a {
+                    color: grey;
+                    text-decoration: none;
+                }
+            }
+
+            &__info {
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: darken(rgb(246, 246, 246), 10%);
+                    }
+                }
+            }
+
+        }
+
+        &__ul__socialmedia {
+            display: flex;
+
+            li {
+                margin-right: 8px;
+            }
+        }
+    }
+    }
